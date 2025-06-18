@@ -1,7 +1,14 @@
 import os
 from google_auth_oauthlib.flow import InstalledAppFlow
 
-SCOPES = ["", "", "",]
+SCOPES = [
+    'https://www.googleapis.com/auth/gmail.send',           # Gmail send
+    'https://www.googleapis.com/auth/gmail.readonly',       # Gmail read
+    'https://www.googleapis.com/auth/spreadsheets',         # Google Sheets
+    'https://www.googleapis.com/auth/documents',            # Google Docs
+    'https://www.googleapis.com/auth/calendar',             # Google Calendar
+    'https://www.googleapis.com/auth/drive',                # Google Drive
+    'https://www.googleapis.com/auth/youtube',]
 
 def main():
     flow = InstalledAppFlow.from_client_secrets_file(
