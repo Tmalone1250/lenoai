@@ -3,8 +3,7 @@ client.json
 credentials.json
 manager/client.json
 .venv
-.vscode
-token.json
+/.vscode
 __pycache__
 .pytest_cache
 manager/__pycache__
